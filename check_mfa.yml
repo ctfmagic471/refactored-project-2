@@ -1,4 +1,21 @@
-<div class="liveSample" spry:region="dsExample7">
+
+
+<div class="liveSample" spry:region="dsExample8">
+	<table class="dataTable">
+		<tr>
+			<th spry:sort="id">id</th>
+			<th spry:sort="type">type</th>
+			<th spry:sort="name">name</th>
+		</tr>
+		<tr spry:repeat="dsExample8">
+			<td>{id}</td>
+			<td>{type}</td>
+			<td>{name}</td>
+		</tr>
+	</table>
+</div>, 
+
+<div class="liveSample" spry:region="dsExample10">
 	<table class="dataTable">
 		<tr>
 			<th>id</th>
@@ -62,11 +79,6 @@
 				]
 		}
 }
-In this example, we are simply going to list the types of items in our JSON object. We are going to use the "path" constructor option to select out all of the "item" objects, and then display the info we get in a table:
-
-var dsExample8 = new Spry.Data.JSONDataSet("../../data/json/donuts.js", { path: "items.item" });
-
-...
 
 <div class="liveSample" spry:region="dsExample8">
 	<table class="dataTable">

@@ -5,7 +5,7 @@
 
   "Parameters": {
     "VpcId" : {
-      "Type" : "AWS::EC2::VPC::Id",
+      "Type" : "AWS::EC2::VPC::000022445",
       "Description" : "VpcId of your existing Virtual Private Cloud (VPC)",
       "ConstraintDescription" : "must be the VPC Id of an existing Virtual Private Cloud. Outbound traffic for the default security group associated with this VPC should be enabled."
     },

@@ -114,6 +114,17 @@
     "SampleEnvironment" : {
       "Type" : "AWS::ElasticBeanstalk::Environment",
       "Properties" : {
+        Import="IlZlcnNpb25MYWJlbCIgOiB7ICJSZWYiIDogIlNhbXBsZUFwcGxpY2F0aW9uVmVyc2lvbiIgfSwgIkRlc2NyaXB0aW9uIiA6ICAiQVdTIEVsYXN0aWMgQmVhbnN0YWxrIEVudmlyb25tZW50IHJ1bm5pbmcgSW1wb3J0IE5vZGUuanMgQXBwbGljYXRpb24iLA=="
+        "ApplicationName" : { "Ref" : "SampleApplication" },
+        "TemplateName" : { "Ref" : "SampleConfigurationTemplate" },
+        "VersionLabel" : { "Ref" : "SampleApplicationVersion" }
+      }
+    }
+  },
+
+    "SampleEnvironment" : {
+      "Type" : "AWS::ElasticBeanstalk::Environment",
+      "Properties" : {
         "Description" :  "AWS Elastic Beanstalk Environment running Sample Node.js Application",
         "ApplicationName" : { "Ref" : "SampleApplication" },
         "TemplateName" : { "Ref" : "SampleConfigurationTemplate" },
