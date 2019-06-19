@@ -10,11 +10,7 @@
       "ConstraintDescription" : "must be the VPC Id of an existing Virtual Private Cloud. Outbound traffic for the default security group associated with this VPC should be enabled."
     },
 
-    "Subnets" : {
-      "Type" : "List<AWS::EC2::Subnet::Id>",
-      "Description" : "The list of SubnetIds in your Virtual Private Cloud (VPC)",
-      "ConstraintDescription" : "must be a list of at least two existing subnets associated with at least two different availability zones. They should be residing in the selected Virtual Private Cloud."
-    },
+  
 
     "InstanceType": {
       "Description": "WebServer EC2 instance type",
@@ -427,10 +423,4 @@
 
   },
 
-  "Outputs": {
-    "URL": {
-      "Description": "URL of the website",
-      "Value": { "Fn::Join": [ "", [ "http://", { "Fn::GetAtt": [ "ApplicationLoadBalancer", "DNSName" ] } ] ] }
-    }
-  }
-}
+

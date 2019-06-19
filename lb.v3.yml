@@ -47,7 +47,7 @@
             "Action"   : [ "sts:AssumeRole" ]
           } ]
         },
-        "Path": "/"
+        "Path": "../"
       }
     },
 

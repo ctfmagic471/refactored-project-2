@@ -17,9 +17,7 @@ Metadata:
           - Frequency
       - Label:
           default: Delivery Notifications
-        Parameters:
-          - TopicArn
-          - NotificationEmail
+ 
     ParameterLabels:
       AllSupported:
         default: Support all resource types

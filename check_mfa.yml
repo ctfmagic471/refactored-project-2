@@ -13,7 +13,7 @@
 			<td>{name}</td>
 		</tr>
 	</table>
-</div>, 
+</div>, # need to update this section ?
 
 <div class="liveSample" spry:region="dsExample10">
 	<table class="dataTable">
