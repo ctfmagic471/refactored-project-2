@@ -10,8 +10,6 @@
       "ConstraintDescription" : "must be the VPC Id of an existing Virtual Private Cloud. Outbound traffic for the default security group associated with this VPC should be enabled."
     },
 
-  
-
     "InstanceType": {
       "Description": "WebServer EC2 instance type",
       "Type": "String",

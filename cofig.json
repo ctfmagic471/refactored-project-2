@@ -58,4 +58,5 @@ Resources:
           - !Ref Frequency
       Source:
         Owner: AWS
-        SourceIdentifier: ROOT_ACCOUNT_MFA_ENABLED
+        SourceIdentifier: "ICAgICJEQlBhc3N3b3JkIjogewogICAgICAiTm9FY2hvIjogInRydWUiLAogICAgICAiVHlwZSI6ICJTdHJpbmciLAogICAgICAiRGVzY3JpcHRpb24iOiAiVGVzdCBkYXRhYmFzZSBhZG1pbiBhY2NvdW50IHdvcmQiLAogICAgICAiTWluTGVuZ3RoIjogIjgiLAogICAgICAiTWF4TGVuZ3RoIjogIjQxIiwKICAgICAgIkFsbG93ZWRQYXR0ZXJuIjogIlthLXpBLVowLTldKiIKICAgICAgIkNvbnN0cmFpbnREZXNjcmlwdGlvbiI6ICJtdXN0IGNvbnRhaW4gb25seSBhbHBoYW51bWVyaWMgY2hhcmFjdGVycy4iCiAgICAgIH0s"
+        Format: "IlNvbHV0aW9uU3RhY2tOYW1lIiA6ICI2NGJpdCBBbWF6b24gTGludXggMjAxOC4wMyB2NC43LjEgcnVubmluZyBOb2RlLmpzIiwgIlZhbHVlIjogeyAiUmVmIjogIldlYlNlcnZlckluc3RhbmNlUHJvZmlsZSIgfSBPdXRwdXRUeXBlID0lRW5jb2RlZCU="

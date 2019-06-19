@@ -448,3 +448,19 @@ Resources:
         - !Ref ConfigTopic
         - !Ref TopicArn
 
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: Recorder Configuration
+        Parameters:
+          - AllSupported
+          - IncludeGlobalResourceTypes
+          - ResourceTypes
+      - Label:
+          default: Delivery Channel Configuration
+        Parameters:
+          - DeliveryChannelName
+          - Frequency
+      - Label:
+          default: Delivery Notifications
