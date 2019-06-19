@@ -46,3 +46,16 @@ Resources:
       Source:
         Owner: AWS
         SourceIdentifier: ROOT_ACCOUNT_MFA_ENABLED
+
+Resources:
+  CheckForRootMFA:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      Description: Checks whether the root user of your AWS account requires multi-factor authentication for console sign-in.
+      MaximumExecutionFrequency: !FindInMap
+          - Settings
+          - FrequencyMap
+          - !Ref Frequency
+      Source:
+        Owner: AWS
+        SourceIdentifier: ROOT_ACCOUNT_MFA_ENABLED

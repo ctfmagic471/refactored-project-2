@@ -33,16 +33,6 @@
       "ConstraintDescription": "must be a valid email address."
     }
   },
-   "DBPassword": {
-      "NoEcho": "true",
-      "Type": "String",
-      "Description": "Test database admin account word",
-      "MinLength": "8",
-      "MaxLength": "41",
-      "AllowedPattern": "[a-zA-Z0-9]*"
-      "ConstraintDescription": "must contain only alphanumeric characters."
-      },
-
 
   "Mappings" : {
     "Region2Principal" : {
